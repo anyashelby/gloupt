@@ -1,0 +1,67 @@
+.app {
+    position: relative;
+    padding: 65px 0 75px 0;
+    &__block {
+        margin: 0 auto;
+        width: 78%;
+    }
+    &__heading {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 68px;
+        background-color: #25333c;
+    }
+    &__title {
+        font-family: 'Roboto';
+        font-size: 1.188rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        margin: 0;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #fff;
+        text-transform: uppercase;
+    }
+    &__form {
+        padding: 18px 0 25px 0;
+       
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(150px, 268px));
+        grid-template-rows: auto 71px auto;
+        gap: 8px 6px;
+        place-content: center center;
+        
+        background: rgba(255, 255, 255, 0.32);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(9px);
+        -webkit-backdrop-filter: blur(9px);
+        input {
+            font-size: 0.875rem;
+        }
+    }
+    &__area {
+        padding: 18px 0 0 25px;
+        grid-column: 1 / 4;
+        resize: none;
+        outline: none;
+        border-radius: 10px;
+        transition: 0.2s ease-in-out;
+
+        font-size: 0.875rem;
+        &:focus {
+            background-color: #e9e9e9;
+        }
+    }
+    &__btn {
+        grid-column: 2 / 3;
+        align-self: center;
+        justify-self: center;
+    }
+}

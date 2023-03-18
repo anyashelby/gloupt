@@ -1,0 +1,35 @@
+.btn {
+    display: inline-block;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    
+    background-color: #ec644b;
+
+    font-family: 'Roboto';
+    font-size: 0.75rem;
+    font-weight: 400;
+    
+    border-radius: 20px;
+    transition: 0.4s ease;
+    &:hover {
+        background-color: #903727;
+    }
+    &_submit {
+            padding: 15px 31px;
+            background-color: $main_color;
+            font-family: 'Roboto';
+            color: #fff;
+            text-transform: uppercase;
+        &_consultation {
+            position: absolute;
+            top: 245px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+    }
+    &__call {
+        padding: 10px 23px;
+    }
+}

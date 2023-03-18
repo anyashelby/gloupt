@@ -1,0 +1,32 @@
+.plus {
+    padding: 55px 0 50px 0;
+    height: auto;
+    background-color: #f3f3f3;
+    &__wrapper {
+        margin-top: 30px;
+        display: grid;
+        grid-template: repeat(4, auto) / repeat(2, minmax(auto, 526px));
+        column-gap: 60px;
+        row-gap: 30px;
+        grid-auto-rows: auto;
+    }
+    &__column {
+        display: grid;
+        grid-template-columns: 48px minmax(auto, 447px);
+        column-gap: 20px;
+        align-items: flex-start;
+    }
+    &__title {
+        color: #2e2e2e;
+        font-family: 'Roboto';
+        text-align: center; 
+        font-weight: 700;
+    }
+    &__descr {
+        font-family: 'Roboto';
+        font-size: 0.875rem;
+        font-weight: 300;
+        line-height: 1.375rem; 
+        color: #3a3a3a;
+    }
+}

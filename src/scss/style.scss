@@ -1,0 +1,67 @@
+@import 'libs/animate.min';
+@import 'libs/fonts';
+@import 'base/variables';
+@import 'base/mixins';
+
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+
+.divider {
+	margin: 0 auto; 
+	margin-top: 20px;
+	width: 148px;
+	height: 1px;
+	background-color: $main_color;
+}
+
+input {
+	padding-top: 10px;
+	padding-left: 25px;
+	padding-bottom: 10px;
+	border-radius: 20px;
+	border: 1px solid #898989;
+	transition: 0.2s ease-in-out;
+	&:focus {
+		outline: none;
+		background-color: #e9e9e9;
+	}
+}
+
+button {
+	font-size: 0.75rem;
+	padding: 0;
+	border: none;
+	border-radius: 25px;
+}
+
+/* section {
+	height: 100vh; 
+} */
+
+
+@import 'blocks/title';
+@import 'blocks/header';
+@import 'blocks/buttons';
+@import 'blocks/stripes';
+@import 'blocks/plus';
+@import 'blocks/delivery';
+@import 'blocks/agent';
+@import 'blocks/price';
+@import 'blocks/consultation';
+@import 'blocks/scheme';
+@import 'blocks/slider';
+@import 'blocks/app';
+@import 'blocks/footer';
+@import 'blocks/slick';
+@import 'blocks/menu';
+@import 'blocks/media';
+
+

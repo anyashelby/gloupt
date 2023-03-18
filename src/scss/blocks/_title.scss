@@ -1,0 +1,36 @@
+.title {
+    font-family: 'Roboto Condensed';
+    text-transform: uppercase;
+    line-height: normal;
+    margin: 0;
+    &_fz72 {
+        font-size: 4.5rem;
+    }
+    &_fz42 {
+        font-size: 2.625rem;
+    }
+    &_26 {
+        font-size: 1.625rem;
+    }
+    &_lovercase {
+        margin-top: 15px;
+        text-align: center;
+        color: #fff;
+        font-family: 'Roboto';
+        text-transform: uppercase;
+    }
+    &_bold {
+        color: #2e2e2e;
+        font-family: "Roboto";
+        text-align: center;
+        font-weight: 700;
+    }
+}
+
+.section__title {
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 1rem; 
+    color: $main_color;
+}
+

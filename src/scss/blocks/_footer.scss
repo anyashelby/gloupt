@@ -1,0 +1,120 @@
+.footer {
+    height: auto;
+    background-color: #25333c;
+    padding: 25px 0 40px 0;
+    &__info {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__inner {
+        display: flex;
+        gap: 43px;
+    }
+    &__logo {
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+    &__descr {
+        align-self: center;
+        font-family: 'Roboto';
+        font-size: 1rem;
+        font-weight: 700;
+        color: #fff;
+    }
+    &__tel {
+        display: flex;
+        gap: 18px;
+    }
+    &__call {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+    &__text {
+        font-family: 'Roboto';
+        font-size: 0.875rem;
+        font-weight: 300;
+        color: #fff;
+    }
+    &__link  {
+        font-family: 'Roboto';
+        font-size: 1.188rem;
+        font-weight: 700;
+        text-decoration: none;
+        color: #fff;
+        &:hover {
+            color: blue;
+        }
+    }
+    &__btn {
+        padding: 15px 23px;
+        border-radius: 30px;
+        align-self: center;
+    }
+    &__divider {
+        margin-top: 50px;
+        height: 1px;
+        width: 100%;
+        background-color: #fff;
+        opacity: 0.5;
+    }
+    &__wrapper {
+        margin-top: 15px;
+        display: flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__year {
+        time {
+            font-family: 'Roboto';
+            font-size: 0.813rem;
+            font-weight: 300;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        a {
+            text-decoration: none;
+            font-family: 'Roboto';
+            font-size: 0.813rem;
+            font-weight: 300;
+            font-style: normal;
+            color: rgba(255, 255, 255, 0.6);
+            &:hover {
+                text-decoration: underline;
+            }   
+        }
+    }
+    &__pol {
+        font-family: 'Roboto';
+        font-size: 0.813rem;
+        font-weight: 300;
+        color: $main_color;
+        &:hover {
+            color: #fff;
+        }
+    }
+    &__made {
+        display: flex;
+        gap: 10px;
+    }
+    &__text {
+        align-self: center;
+        text-decoration: none;
+        font-family: 'Roboto';
+        font-size: 0.813rem;
+        font-weight: 300;
+        font-style: normal;
+        color: rgba(255, 255, 255, 0.6);
+    }
+    &__photo {
+        width: 30px;
+        height: 32px;
+        img {
+            cursor: pointer;
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}

@@ -1,0 +1,74 @@
+.consultation {
+	position: relative;
+	padding-bottom: 55px;
+	&__title {
+		font-size: 1.75rem;
+		color: $text_color;
+		text-align: center;
+	}
+	&__svg {
+		position: absolute;
+		left: 50%;
+		transform: translateX(-50%);
+		top: 75px;
+		z-index: 2;
+		svg path {
+			fill: $main_color;
+		}
+		&:before {
+			content: '';
+			display: block; 
+			width: 80px; 
+			height: 80px;
+			border: 2px solid $main_color;
+			border-radius: 100%;
+			position: absolute;
+			top: -15px;
+			left: 50%;
+			transform: translateX(-50%);	
+		}
+	}
+	&__overlay {
+		position: absolute;
+		width: 125px;
+		height: 80px;
+		top: 60px;
+		left: 50%;
+		transform: translateX(-50%);
+		background-color: #fff;
+		z-index: 0;
+		&-btn {
+			position: absolute;
+			height: 20px;
+			width: 195px;
+			top: 257px;
+			z-index: 0;
+		}
+	}
+	&__form {
+		margin-top: 70px;
+	}
+	fieldset {
+		padding-top: 65px;
+		padding-bottom: 50px;
+		width: 100%;
+		height: 10.375rem;
+		display: grid;
+		grid-template-columns: repeat(3, 268px);
+		place-content: center center;
+		column-gap: 5px; 
+		border: 1px solid #898989;
+	}
+	/* &__btn {
+		padding: 15px 31px;
+		background-color: $main_color;
+		font-family: 'Roboto';
+		color: #fff;
+		text-transform: uppercase;
+		position: absolute;
+		top: 245px;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1;
+	} */
+}

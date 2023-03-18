@@ -1,0 +1,32 @@
+.scheme {
+    padding: 50px 0 45px 0;
+    &__inner {
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 253px);
+        column-gap: 30px;
+        row-gap: 15px;
+        justify-content: center;
+    }
+    &__row {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__col {
+        margin-top: 40px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 257px);
+        row-gap: 15px;
+        justify-content: center;
+    }
+    &__descr {
+        text-align: center;
+        font-family: 'Roboto';
+        font-size: 0.875rem;
+        line-height: 1.25rem; 
+        font-weight: 300;
+        color: #3a3a3a;
+    }
+    
+}

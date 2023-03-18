@@ -1,0 +1,117 @@
+.header {
+    position: relative;
+    padding-top: 25px;
+    background: url('../img/header/header.png') center ( center / cover ) no-repeat;
+    height: 100vh;
+    .nav {
+        display: flex;
+        column-gap: 30px;
+        align-items: center;
+        margin-bottom: 10px;
+        &__img {
+            display: block;
+            max-width: 100%;
+            height: auto;
+        }
+        &__list {
+            display: flex;
+            column-gap: 30px;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+        &__items {
+            font-size: 0.938rem;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                color: #ec644b;
+                text-decoration: underline;
+                text-decoration-thickness: 1px;
+                text-underline-offset: 5px;
+
+            }
+           
+        }
+        &__call {
+            font-family: 'Roboto';
+            font-size: 0.875rem;
+            color: #fff;
+        }
+        &__wrapper {
+            display: flex;
+            align-items: center;
+            column-gap: 18px;
+        }
+        &__link {
+            color: #fff;
+            text-decoration: none ;
+            font-family: 'Roboto';
+            font-size: 1.188rem;
+            font-weight: 700;
+            &:hover {
+                color: #ec644b;
+            }
+        }
+        
+        &__btn {
+            padding: 10px 23px;
+            &-m {
+                margin-top: 40px;
+                position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                padding: 15px 45px;
+            }
+        }
+    }
+    &__text {
+        color: #fff;
+        text-align: center;
+    }
+    &__title {
+        margin-top: 30px;
+        font-weight: 700;
+        text-align: center;
+        color: $main_color;
+    }
+    &__subtitle {
+        margin-top: 23px;
+        text-align: center;
+        font-weight: 400;
+        color: #fff;
+    }
+    &__column {
+        margin-top: 35px;
+        display: grid; 
+        grid-template-columns: repeat(4, 262px);
+        grid-template-rows: 135px;
+        column-gap: 25px;
+        place-content: center center;
+    }
+    &__col {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        svg path {
+            fill: #fff;
+            &:hover {
+                fill: $main_color;
+            }
+        }
+    }
+    &__descr {
+        text-align: center;
+        color: #fff;
+        font-family: 'Roboto';
+        font-size: 1rem;
+        line-height: 1.375rem;
+    }
+    .hamburger {
+        display: none;
+    }
+    
+    
+
+}
